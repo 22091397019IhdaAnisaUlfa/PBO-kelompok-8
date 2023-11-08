@@ -33,6 +33,14 @@ class Film {
 // Membuat objek Film
 const film1 = new Film("Harry Potter", 4.5, "Deskripsi film 1", "img/harry potter.jpg");
 const film2 = new Film("Titanic", 3.8, "Deskripsi film 2", "img/titanic.jpg");
+const film3 = new Film("Fast and Furious", 4.5, "Deskripsi film 3", "img/harry potter.jpg");
+const film4 = new Film("The Conjuring", 3.8, "Deskripsi film 4", "img/titanic.jpg");
+const film5 = new Film("The Chronicles of Narnia", 4.5, "Deskripsi film 5", "img/harry potter.jpg");
+const film6 = new Film("Toy Story", 3.8, "Deskripsi film 6", "img/titanic.jpg");
+const film7 = new Film("Ratatouille", 4.5, "Deskripsi film 7", "img/harry potter.jpg");
+const film8 = new Film("Inside Out", 3.8, "Deskripsi film 8", "img/titanic.jpg");
+const film9 = new Film("Coco", 4.5, "Deskripsi film 9", "img/harry potter.jpg");
+const film10 = new Film("The Boss Baby", 3.8, "Deskripsi film 10", "img/titanic.jpg");
 
 // Membuat daftar film
 const movies = [film1, film2];

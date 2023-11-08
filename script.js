@@ -43,7 +43,7 @@ const film9 = new Film("Coco", 4.5, "Deskripsi film 9", "img/coco.jpeg");
 const film10 = new Film("The Boss Baby", 3.8, "Deskripsi film 10", "img/boss baby.jpg");
 
 // Membuat daftar film
-const movies = [film1, film2];
+const movies = [film1, film2, film3, film4, film5, film6, film7, film8, film9, film10];
 
 // Kode HTML untuk menampilkan rating dalam bentuk bintang
 const getStarRatingHTML = (rating) => {

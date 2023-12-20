@@ -81,43 +81,43 @@ class FilmCategory {
             if (film.title === "Danur") {
                 showReviewsButton.href = "danur.html";
             } else if (film.title === "Bumi Manusia") {
-                showReviewsButton.href = "bumi.manusia.html";
+                showReviewsButton.href = "bumi_manusia.html";
             } else if (film.title === "Mencuri Raden Saleh") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "mencuri_raden_saleh.html";
             } else if (film.title === "Pengabdi Setan") {
-                showReviewsButton.href = "pengabdi setan.html";
+                showReviewsButton.href = "pengabdi_setan.html";
             } else if (film.title === "5 cm") {
-                showReviewsButton.href = "5 cm.html";
-            } else if (film.title === "Harry Potter") {
-                showReviewsButton.href = "harry potter.html";
+                showReviewsButton.href = "5_cm.html";
+            } else if (film.title === "Harry_Potter") {
+                showReviewsButton.href = "harry_potter.html";
             } else if (film.title === "Ratatouille") {
                 showReviewsButton.href = "ratatouille,html";
             } else if (film.title === "Titanic") {
                 showReviewsButton.href = "titanic.html";
             } else if (film.title === "Narnia") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "narnia_html";
             } else if (film.title === "The Boss Baby") {
-                showReviewsButton.href = "boss baby .html";
+                showReviewsButton.href = "boss_baby.html";
             } else if (film.title === "Kabhi Haan Kabhi Naa") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "kabhihaan.html";
             } else if (film.title === "Baazigar") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "baaziga.html";
             } else if (film.title === "Dil To Pagal Hai") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "diltopagai.html";
             } else if (film.title === "Kabhi Khushi Kabhie Gham") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "kabhikushi.html";
             } else if (film.title === "Devdas") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "devdas.html";
             } else if (film.title === "Miracle in Cell No.7") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "miracle.html";
             } else if (film.title === "Train to Busan") {
-                showReviewsButton.href = "login.php";
+                showReviewsButton.href = "traintobusan.html";
             } else if (film.title === "The Childe") {
-                showReviewsButton.href = "login.php";  
+                showReviewsButton.href = "thechilde.html";  
             } else if (film.title === "The Moon") {
-                showReviewsButton.href = "login.php";  
+                showReviewsButton.href = "themoon.html";  
             } else if (film.title === "Alive") {
-                showReviewsButton.href = "login.php";  
+                showReviewsButton.href = "alive,html";  
             } 
             
             

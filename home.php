@@ -1,3 +1,22 @@
+<?php
+include 'config.php';
+session_start();
+$user_id = $_SESSION['user_id'];
+
+if (!isset($user_id)) {
+    header('location:login.php');
+};
+
+if (isset($_GET['logout'])) {
+    unset($user_id);
+    session_destroy();
+    header('location:login.php');
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,11 +47,27 @@
 <input type="text" id="searchInput" placeholder="Search">
 <button id="searchButton">Search</button>
 
-                        
+                            
                       
                     </ul>
                 </div>
-                <a href="login.php" class="menu-list-item">Login</a>
+                <a href="update_profile.php" class="menu-list-item" style="margin-top: 5px;">
+                                    <?php
+                                    $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
+                                    if (mysqli_num_rows($select) > 0) {
+                                        $fetch = mysqli_fetch_assoc($select);
+                                    }
+
+                                    // Menentukan ukuran gambar berdasarkan keberadaan gambar
+                                    $imageWidth = $fetch['image'] ? 35 : 100;
+                                    $imageStyle = "width: {$imageWidth}px; height: 35px; border-radius: 50%;";
+
+                                    echo '<img src="' . ($fetch['image'] == '' ? "images/default-avatar.png" : "uploaded_img/{$fetch['image']}") . '" style="' . $imageStyle . '">';
+                                    ?>
+                                
+                                </a>
+                <a href="home.php?logout=<?php echo $user_id; ?>" class="menu-list-item">Logout</a>
+              
                 
                     <div class="toggle">
                         <i class="fas fa-moon toggle-icon"></i>
@@ -109,7 +144,7 @@
 
 
   
-    <script src="index.js"></script>
+    <script src="home.js"></script>
     <script src="app.js"></script>
     
 </body>
